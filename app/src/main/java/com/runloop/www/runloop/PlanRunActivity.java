@@ -1,9 +1,9 @@
 package com.runloop.www.runloop;
 
+import android.databinding.DataBindingUtil;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.widget.SeekBar;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -11,6 +11,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.runloop.www.runloop.databinding.ActivityPlanRunBinding;
 
 public class PlanRunActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -26,24 +27,23 @@ public class PlanRunActivity extends FragmentActivity implements OnMapReadyCallb
         mapFragment.getMapAsync(this);
     }
 
-    distanceControl = (SeekBar) findViewById(R.id.volume_bar);
+    ActivityPlanRunBinding binding =
+            DataBindingUtil.setContentView(this, R.layout.activity_plan_run);
+    SeekBar distanceControl = binding.distanceBar;
+    int nWaypoints = 1;
 
-    distanceControl.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
-        int progressChanged = 0;
+    public void onProgressChanged(SeekBar distanceControl, int progress, boolean fromUser){
+        if (fromUser)
+            nWaypoints = progress;
+    }
 
-        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser){
-            progressChanged = progress;
-        }
+    public void onStartTrackingTouch(SeekBar distanceControl) {
+        // TODO Auto-generated method stub
+    }
 
-        public void onStartTrackingTouch(SeekBar seekBar) {
-            // TODO Auto-generated method stub
-        }
-
-        public void onStopTrackingTouch(SeekBar seekBar) {
-            Toast.makeText(SeekbarActivity.this,"seek bar progress:"+progressChanged,
-                    Toast.LENGTH_SHORT).show();
-        }
-    });
+    public void onStopTrackingTouch(SeekBar distanceControl) {
+        //Something
+    }
 
 
     /**
@@ -60,8 +60,8 @@ public class PlanRunActivity extends FragmentActivity implements OnMapReadyCallb
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng montreal = new LatLng(45.5, -75.5);
+        mMap.addMarker(new MarkerOptions().position(montreal).title("Marker in Montreal"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(montreal));
     }
 }
