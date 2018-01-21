@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RunLoop</string>
+    <string name="title_activity_plan_run">Plan your run</string>
 </resources>

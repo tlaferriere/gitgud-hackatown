@@ -1,15 +1,15 @@
-Executable : C:\Users\Evan\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+Executable : C:\Users\tlafe\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
 arguments : 
--HD:\Hackatown2018\Git\gitgud-hackatown\app
--BD:\Hackatown2018\Git\gitgud-hackatown\app\.externalNativeBuild\cmake\debug\armeabi-v7a
+-HC:\Users\tlafe\Documents\repos\gitgud-hackatown\app
+-BC:\Users\tlafe\Documents\repos\gitgud-hackatown\app\.externalNativeBuild\cmake\debug\armeabi-v7a
 -DANDROID_ABI=armeabi-v7a
 -DANDROID_PLATFORM=android-15
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\Hackatown2018\Git\gitgud-hackatown\app\build\intermediates\cmake\debug\obj\armeabi-v7a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\tlafe\Documents\repos\gitgud-hackatown\app\build\intermediates\cmake\debug\obj\armeabi-v7a
 -DCMAKE_BUILD_TYPE=Debug
--DANDROID_NDK=C:\Users\Evan\AppData\Local\Android\Sdk\ndk-bundle
+-DANDROID_NDK=C:\Users\tlafe\AppData\Local\Android\Sdk\ndk-bundle
 -DCMAKE_CXX_FLAGS=
--DCMAKE_TOOLCHAIN_FILE=C:\Users\Evan\AppData\Local\Android\Sdk\ndk-bundle\build\cmake\android.toolchain.cmake
--DCMAKE_MAKE_PROGRAM=C:\Users\Evan\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\tlafe\AppData\Local\Android\Sdk\ndk-bundle\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\tlafe\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe
 -GAndroid Gradle - Ninja
 jvmArgs : 
 
