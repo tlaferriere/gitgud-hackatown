@@ -18,14 +18,19 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:map="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:id="@+id/map"
                 android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
                 android:layout_height="470dp"
-                tools:context="com.runloop.www.runloop.PlanRunActivity" />
+                tools:context="com.runloop.www.runloop.PlanRunActivity" />-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:text="Google map should be here, but could not get the key. *Does google mappy thing*" />
 
             <LinearLayout
                 android:layout_width="fill_parent"

@@ -21,6 +21,8 @@ public class WelcomeScreenActivity extends AppCompatActivity {
     /** Called when the user taps the Run button */
     public void begin(View view) {
         Intent intent = new Intent(this, PlanRunActivity.class);
+        System.out.println("Intent has been clarified.");
         startActivity(intent);
+        System.out.println("Activity started (or not)");
     }
 }

@@ -11,6 +11,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/button_states"
+        android:onClick="begin"
         android:text="Run"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
