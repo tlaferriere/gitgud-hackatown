@@ -55,7 +55,7 @@ public class PlanRunActivity extends FragmentActivity implements OnMapReadyCallb
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-    @Override
+    /*@Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
@@ -63,5 +63,5 @@ public class PlanRunActivity extends FragmentActivity implements OnMapReadyCallb
         LatLng montreal = new LatLng(45.5, -75.5);
         mMap.addMarker(new MarkerOptions().position(montreal).title("Marker in Montreal"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(montreal));
-    }
+    }*/
 }
